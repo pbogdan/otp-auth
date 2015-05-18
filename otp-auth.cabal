@@ -1,0 +1,38 @@
+Name:                   otp-auth
+Version:                0.0.1
+Author:                 Piotr Bogdan <ppbogdan@gmail.com>
+Maintainer:             Piotr Bogdan <ppbogdan@gmail.com>
+License:                BSD3
+License-File:           LICENSE
+-- Synopsis:               
+-- Description:            
+Cabal-Version:          >= 1.10
+Build-Type:             Simple
+Extra-Source-Files:     README.md
+
+Executable otp-auth
+  Default-Language:     Haskell2010
+  Default-Extensions:   OverloadedStrings
+  HS-Source-Dirs:       src
+  Main-Is:              Main.hs
+  Build-Depends:        base >= 4 && < 5
+                        , OTP
+                        , bytestring
+                        , base32-bytestring
+                        , binary
+                        , time >= 1.5.0
+                        , optparse-applicative
+                                                
+Test-Suite spec
+  Type:                 exitcode-stdio-1.0
+  Default-Language:     Haskell2010
+  Hs-Source-Dirs:       src
+                      , test
+  Ghc-Options:          -Wall
+  Main-Is:              Spec.hs
+  Build-Depends:        base
+                      , hspec
+
+Source-Repository head
+  Type:                 git
+--  Location:             
