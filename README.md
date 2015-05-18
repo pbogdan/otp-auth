@@ -26,3 +26,14 @@ run
 `otp-auth --help`
 
 for available options.
+
+Simplest invocation requires specifying the shared secret key only,
+and looks like this:
+
+```shell
+otp-auth --secret mysharedsecret
+```
+
+and will output a single one-time password and exit. If you would like
+to see two, or more, consecutive passwords you can pass the `--loop`
+argument.
