@@ -17,7 +17,7 @@ cd otp-auth
 cabal install
 ```
 
-make sure `$HOME/.cabal/bin` is in your $PATH.
+make sure `$HOME/.cabal/bin` is in your `$PATH`.
 
 ## Usage
 
