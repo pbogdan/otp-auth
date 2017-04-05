@@ -18,7 +18,7 @@ Executable otp-auth
   Build-Depends:        base >= 4 && < 5
                         , OTP
                         , bytestring
-                        , base32-bytestring
+                        , sandi
                         , binary
                         , time >= 1.5.0
                         , optparse-applicative

@@ -3,10 +3,10 @@
 
 module Main where
 
+import Codec.Binary.Base32
 import Control.Concurrent (threadDelay)
 import Control.Monad (when, forever)
 import Data.ByteString (unpack)
-import Data.ByteString.Base32 (decode)
 import Data.ByteString.Char8 (pack)
 import Data.Monoid
 import Data.OTP

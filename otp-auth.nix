@@ -1,5 +1,5 @@
-{ mkDerivation, base, base32-bytestring, binary, bytestring, hspec
-, optparse-applicative, OTP, stdenv, time
+{ mkDerivation, base, binary, bytestring, hspec
+, optparse-applicative, OTP, sandi, stdenv, time
 }:
 mkDerivation {
   pname = "otp-auth";
@@ -7,9 +7,9 @@ mkDerivation {
   src = ./.;
   isLibrary = false;
   isExecutable = true;
+  doCheck = false;
   executableHaskellDepends = [
-    base base32-bytestring binary bytestring optparse-applicative OTP
-    time
+    base binary bytestring optparse-applicative OTP sandi time
   ];
   testHaskellDepends = [ base hspec ];
   license = stdenv.lib.licenses.bsd3;
