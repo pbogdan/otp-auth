@@ -8,7 +8,7 @@ import Control.Monad (when, forever)
 import Data.ByteString (unpack)
 import Data.ByteString.Base32 (decode)
 import Data.ByteString.Char8 (pack)
-import Data.Monoid (mempty)
+import Data.Monoid
 import Data.OTP
 import Data.Time
 import Options.Applicative
